@@ -21,3 +21,10 @@ console.log(filter(1,2,3));
 
 [num1,num2] = numbers;
 console.log(num1, num2);
+
+const doubleNumArray = numbers.map((num) => {
+  return num * 2;
+});
+
+console.log(numbers);
+console.log(doubleNumArray);
