@@ -2,12 +2,24 @@ import "./App.css";
 import ExpenseItem from "./components/ExpenseItem";
 
 function App() {
-	return (
-		<div>
-			<h2>Let's get started!</h2>
-			<ExpenseItem></ExpenseItem>
-		</div>
-	);
+	const hi = <p>Hi</p>;
+	const myFavorite = {
+		food: <li>샐러드</li>,
+		animal: <li>Dog</li>,
+		hobby: <li>programming</li>
+	};
+
+	function tick() {
+		const element = (
+			<div>
+				<h1>Hello world!</h1>
+				<h2>It is {new Date().toLocaleDateString()}.</h2>
+			</div>
+		);
+		ReactDOM.render(element, document.getElementById('root'));
+	}
+
+	setInterval(tick, 1000);
 }
 
 export default App;
